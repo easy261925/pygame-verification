@@ -114,9 +114,10 @@ class TextBox:
     def safe_key_down(self, event, dest_surf, game_over):
         try:
             self.key_down(event, dest_surf, game_over)
-        except:
-            self.reset()
+        except Exception as e:
+            self.catch_err(e)
 
     # 异常的时候还原到初始状态
-    def reset(self):
+    def catch_err(self, e):
+        print('catch_err', e)
         self.text += ''
