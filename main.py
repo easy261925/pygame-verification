@@ -16,7 +16,7 @@ def main():
     clock = pygame.time.Clock()
 
     game_over = False  # 游戏结束
-    MAX_SECONDS = 10  # 游戏时间
+    MAX_SECONDS = 60  # 游戏时间
     seconds = 0  # 计时器秒数
     milliseconds = 0  # 计时器毫秒数
     bg_colors = [(255, 0, 0), (0, 255, 0)]  # 背景颜色
